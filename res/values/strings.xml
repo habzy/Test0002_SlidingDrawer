@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, Test0002_SlidingDrawerActivity!
+	</string>
+	<string name="app_name">Test0002_SlidingDrawer</string>
+
+	<!-- Incoming call hint shown on tab (must be kept very short): answer incoming 
+		call -->
+	<string name="slide_to_answer_hint">Answer</string>
+	<!-- Incoming call hint shown on tab (must be kept very short): decline 
+		incoming call -->
+	<string name="slide_to_decline_hint">Decline</string>
+
+</resources>

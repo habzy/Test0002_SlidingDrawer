@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_marginTop="50dip" android:layout_height="70dip"
+		android:id="@+id/answerFrame">
+		<FrameLayout android:layout_width="160dip"
+			android:background="#11111111" android:layout_alignParentLeft="true"
+			android:layout_height="wrap_content" android:id="@+id/answerFrame">
+			<com.habzy.test.MyDrawer android:id="@+id/answerdrawer"
+				android:layout_width="match_parent" android:layout_height="match_parent"
+				android:orientation="horizontal" android:handle="@+id/answerhandle"
+				android:content="@+id/answercontent">
+
+				<ImageView android:id="@id/answerhandle"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/incoming_call_answer" />
+
+				<ScrollView android:id="@id/answercontent"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"
+					android:background="#EEFFFFFF" android:padding="10dip"
+					android:clickable="true">
+				</ScrollView>
+
+			</com.habzy.test.MyDrawer>
+		</FrameLayout>
+
+		<FrameLayout android:layout_width="160dip" android:id="@+id/answerFrame"
+			android:background="#11111111" android:layout_alignParentRight="true"
+			android:layout_height="wrap_content" android:layout_toRightOf="@+id/answerFrame">
+			<SlidingDrawer android:id="@+id/rejectdrawer"
+				android:layout_width="match_parent" android:layout_height="match_parent"
+				android:orientation="horizontal" android:handle="@+id/rejecthandle"
+				android:content="@+id/rejectcontent">
+
+				<ImageView android:id="@id/rejecthandle"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:src="@drawable/incoming_call_decline" />
+
+				<ScrollView android:id="@id/rejectcontent"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"
+					android:background="#EEFFFFFF" android:padding="10dip"
+					android:clickable="true">
+				</ScrollView>
+			</SlidingDrawer>
+		</FrameLayout>
+	</RelativeLayout>
+
+
+	<com.habzy.test.SlidingTab
+		android:id="@+id/incomingCallWidget" android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true" android:layout_marginBottom="80dip" />
+</RelativeLayout>

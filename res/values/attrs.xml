@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2006 The Android Open Source Project Licensed under the 
+	Apache License, Version 2.0 (the "License"); you may not use this file except 
+	in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<!-- Formatting note: terminate all comments with a period, to avoid breaking 
+	the documentation output. To suppress comment lines from the documentation 
+	output, insert an eat-comment element after the comment lines. -->
+
+<resources>
+	<declare-styleable name="DrawableStates">
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_focused" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_window_focused" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_enabled" format="boolean" />
+		<!-- State identifier indicating that the object <var>may</var> display 
+			a check mark. See {@link R.attr#state_checked} for the identifier that indicates 
+			whether it is actually checked. -->
+		<attr name="state_checkable" format="boolean" />
+		<!-- State identifier indicating that the object is currently checked. 
+			See {@link R.attr#state_checkable} for an additional identifier that can 
+			indicate if any object may ever display a check, regardless of whether state_checked 
+			is currently set. -->
+		<attr name="state_checked" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_selected" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_active" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_single" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_first" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_middle" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_last" format="boolean" />
+		<!-- State value for {@link android.graphics.drawable.StateListDrawable 
+			StateListDrawable}. -->
+		<attr name="state_pressed" format="boolean" />
+	</declare-styleable>
+
+</resources>
